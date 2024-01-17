@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins :wght@100; 200; 300; 400 ; 500; 600 ; 700&display=swap');
-
 *{
+    font-family: sans-serif;
     margin:0;padding:0;
     box-sizing: border-box;
     outline: none;
@@ -15,7 +14,7 @@
 
 
 .navbar{
-    width: 85%;
+    width: 55%;
     margin: auto;
     padding: -5px 0;
     display: flex;
@@ -125,15 +124,13 @@ h3{
 .column h4{
     padding: 5px;
     text-align: center;
-    font-size: 25px;
 }
 .column button{
-    height: 60px;
     padding: 5px 30px;
     border: none;
     outline: none;
-    background-color:#2C3B59;
-    color: #fff;
+    background-color:rgb(199, 195, 195) ;
+    color: black;
     cursor: pointer;
     border-radius: 4px;
     font-size: 20px;

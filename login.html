@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Responsive Login Form </title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="login.css">
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header>Login</header>
+                    <form id="form" onsubmit="page()">
+                        <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input" id="email">
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Password" class="password" id="pwd">
+                        <i class='bx bxs-hide eye-icon'></i>
+                        </div>
+                           
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                        
+                    </form>
+                    <div class="form-link">
+                        <span><span class="span">Not a member? </span><a href="sign-up.html" class="signup-link"> Sign up now</a></span> 
+                        </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" class="field Google">
+                    <img src="google.png" alt="" class="google-img">
+                    <span>Continue with Google</span>
+                </a>
+                </div>
+            </div>
+        </section>
+        <!-- custom js link -->
+        <script src="script.js"></script>
+        <script>
+            var email = document.getElementById("email");
+            var pwd = document.getElementById("pwd");
+            function page() {
+                if (email.value=="anushashripati@gmail.com" && pwd.value=="anusha") {
+                    document.getElementById("form").action = "index (1).html";
+                }
+                else {
+                    alert("ID or Password is Incorrect");
+                }
+            }
+        </script>
+    </body>
+    </html>

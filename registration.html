@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Registration</title>
+  <link href="registration.css" rel="stylesheet">
+</head>
+<body>
+
+  <section class="container forms">
+    <div class="form registration">
+      <div class="form-content">
+        <form action="/submit_designer_registration" method="post">
+          <h2> Registration</h2>
+
+          <!-- First Row -->
+          <div class="form-row">
+            <div class="form-column">
+              <label for="fullName">Full Name:</label>
+              <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-column">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-column">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="form-row">
+            <div class="form-column">
+              <label for="designation">Designation:</label>
+              <input type="text" id="designation" name="designation" required>
+            </div>
+            <div class="form-column">
+              <label for="portfolio">Portfolio (Link or Upload):</label>
+              <input type="text" id="portfolio" name="portfolio">
+            </div>
+            <div class="form-column">
+              <label for="project">Projects</label>
+              <input type="text" id="portfolio" name="portfolio">
+            </div>
+            <div class="form-column">
+              <label for="experience">Years of Experience:</label>
+              <input type="number" id="experience" name="experience" required>
+            </div>
+          </div>
+
+          <!-- Third Row -->
+          <div class="form-row">
+            <div class="form-column">
+              <label for="certifications">Certifications (Upload):</label>
+              <input type="file" id="certifications" name="certifications">
+            </div>
+            <div class="form-column">
+              <label for="specializations">Specializations:</label>
+              <input type="text" id="specializations" name="specializations">
+            </div>
+          </div>
+
+          <!-- Fourth Row -->
+          <div class="form-row">
+            <div class="form-column">
+              <label for="socialMedia">Social Media Links:</label>
+              <input type="text" id="socialMedia" name="socialMedia">
+            </div>
+            <div class="form-column">
+              <label for="designStyles">Design Styles:</label>
+              <input type="text" id="designStyles" name="designStyles">
+            </div>
+          </div>
+
+          <!-- Fifth Row -->
+          <div class="form-row">
+            <div class="form-column">
+              <label for="testimonials">Client Testimonials:</label>
+              <textarea id="testimonials" name="testimonials" rows="4"></textarea>
+            </div>
+          </div>
+
+          <!-- Agreement and Submit Button -->
+          <div class="form-row">
+            <label>
+              <input type="checkbox" name="termsConditions" required>
+              I agree to the terms and conditions
+            </label>
+          </div>
+
+          <div class="form-row">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
